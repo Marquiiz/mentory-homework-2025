@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background: #0c243c;
+	color: white;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.menu {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.hero {
+	text-align: center;
+	padding: 70px 20px;
+	background: #e1f5ff;
+}
+
+.hero h1 {
+	font-size: 48px;
+}
+
+.hero p {
+	font-size: 20px;
+	margin: 10px 0 20px;
+}
+
+button {
+	padding: 14px 32px;
+	font-size: 18px;
+	background: #0c243c;
+	color: white;
+	border: none;
+	border-radius: 6px;
+}
+
+.cards {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+
+.card {
+	flex: 1;
+	padding: 50px;
+	background: #d1eaff;
+	text-align: center;
+	font-size: 22px;
+	border-radius: 10px;
+}
+
+/* ===== АДАПТАЦИЯ ===== */
+
+@media (max-width: 900px) {
+	.hero h1 {
+		font-size: 36px;
+	}
+
+	.cards {
+		flex-direction: column;
+	}
+
+	.card {
+		font-size: 20px;
+		padding: 40px;
+	}
+}
+
+@media (max-width: 600px) {
+	.nav {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.menu {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.hero h1 {
+		font-size: 28px;
+	}
+
+	.hero p {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 400px) {
+	.hero h1 {
+		font-size: 22px;
+	}
+
+	button {
+		width: 100%;
+		font-size: 16px;
+		padding: 12px;
+	}
+
+	.card {
+		font-size: 18px;
+		padding: 30px;
+	}
+}
